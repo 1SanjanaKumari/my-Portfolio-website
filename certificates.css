@@ -1,0 +1,49 @@
+/* certificates.css - Updated professional navy theme */
+
+:root {
+    --primary-navy: #0a2540;
+    --accent-blue: #1e3a8a;
+    --light-bg: #f8fafc;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--light-bg);
+    padding-top: 76px;
+}
+
+.navbar {
+    background: linear-gradient(135deg, var(--primary-navy), var(--accent-blue));
+    backdrop-filter: blur(10px);
+}
+
+.navbar.scrolled {
+    background: rgba(10, 37, 64, 0.98) !important;
+}
+
+#cert-hero {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--primary-navy) 100%);
+}
+
+.card {
+    transition: all 0.3s ease;
+    border-radius: 16px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(30, 58, 138, 0.15);
+}
+
+.btn-outline-primary {
+    border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+    #cert-hero {
+        min-height: 50vh;
+    }
+}
