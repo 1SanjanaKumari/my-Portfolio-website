@@ -1,104 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjana Kumari - Portfolio</title>
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- AOS CDN for animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanjana Kumari | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow-lg" id="navbar">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <i class="fas fa-user me-2"></i>SK
+<body>
+
+  <!-- Animated background -->
+  <div class="bg-orbs">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">SK</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#training">Training</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="section hero-section">
+    <div class="hero-content">
+      <div class="hero-badge reveal">Computer Science Engineer</div>
+      <h1 class="hero-name reveal delay-1">Sanjana<br/><span class="accent">Kumari</span></h1>
+      <p class="hero-subtitle reveal delay-2">
+        Motivated B.Tech Computer Science student at Lovely Professional University. Skilled in full-stack development, Data Structures & Algorithms, cloud technologies, and competitive programming. Passionate about building impactful web applications and solving complex problems.
+      <div class="hero-links reveal delay-3">
+        <a href="https://www.linkedin.com/in/12sanjanak" target="_blank" class="pill-btn">LinkedIn</a>
+        <a href="https://github.com/1SanjanaKumari" target="_blank" class="pill-btn outline">GitHub</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal delay-2">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <img src="profile_pic.jpg" alt="Sanjana Kumari" />
+        </div>
+        <div class="ring-orbit">
+          <div class="orbit-dot"></div>
+        </div>
+      </div>
+    </div>
+    <a href="#education" class="scroll-down">
+      <span>Scroll</span>
+      <div class="arrow-anim"></div>
+    </a>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Education</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="glass-card">
+            <div class="card-tag">2023 – Present</div>
+            <h3>B.Tech – Computer Science & Engineering</h3>
+            <p class="inst">Lovely Professional University, Punjab</p>
+            <p class="detail">CGPA: <strong>6.94</strong></p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-1">
+          <div class="tl-dot"></div>
+          <div class="glass-card">
+            <div class="card-tag">2022 – 2023</div>
+            <h3>Intermediate (Class XII)</h3>
+            <p class="inst">Kunwar Singh College, Darbhanga, Bihar</p>
+            <p class="detail">Percentage: <strong>69%</strong></p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="tl-dot"></div>
+          <div class="glass-card">
+            <div class="card-tag">2020 – 2021</div>
+            <h3>Matriculation (Class X)</h3>
+            <p class="inst">Madonna English School, Darbhanga, Bihar</p>
+            <p class="detail">Percentage: <strong>83%</strong></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="glass-card skill-card reveal">
+          <div class="skill-icon">💻</div>
+          <h3>Languages</h3>
+          <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card reveal delay-1">
+          <div class="skill-icon">🌐</div>
+          <h3>Frameworks / Web</h3>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card reveal delay-2">
+          <div class="skill-icon">🛠</div>
+          <h3>Tools & Platforms</h3>
+          <div class="tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Cloud Stack</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card reveal delay-3">
+          <div class="skill-icon">🤝</div>
+          <h3>Soft Skills</h3>
+          <div class="tags">
+            <span class="tag">Versatile</span>
+            <span class="tag">Team-oriented</span>
+            <span class="tag">Influential</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="glass-card project-card reveal">
+          <div class="project-date">Nov 2023</div>
+          <h3>Ecommerce Fashion Store</h3>
+          <p class="project-type">Web Development</p>
+          <p>Built a fully functional fashion e-commerce website with responsive shopping interface, enhanced product browsing, and automated price-comparison templates.</p>
+          <div class="tags mt">
+            <span class="tag accent-tag">HTML5</span>
+            <span class="tag accent-tag">CSS3</span>
+            <span class="tag accent-tag">JavaScript</span>
+          </div>
+          <a href="https://github.com/1SanjanaKumari/Ecommerce-Website" target="_blank" class="proj-link">View on GitHub →</a>
+        </div>
+
+        <div class="glass-card project-card reveal delay-1">
+          <div class="project-date">Oct 2023</div>
+          <h3>Climate Change Education Website</h3>
+          <p class="project-type">Web Development</p>
+          <p>Created an informative, fully responsive website to raise awareness about climate change with interactive learning pages and engaging content flow.</p>
+          <div class="tags mt">
+            <span class="tag accent-tag">HTML5</span>
+            <span class="tag accent-tag">CSS3</span>
+            <span class="tag accent-tag">JavaScript</span>
+          </div>
+          <a href="https://github.com/1SanjanaKumari/Climate-Change-Education-" target="_blank" class="proj-link">View Project →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINING -->
+  <section id="training" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Training</h2>
+      <div class="glass-card training-card reveal">
+        <div class="training-header">
+          <div>
+            <h3>Data Structures & Algorithms with Java</h3>
+            <p class="inst">CipherSchools</p>
+          </div>
+          <div class="card-tag">July 2025</div>
+        </div>
+        <ul class="training-list">
+          <li>Mastered core DSA concepts using Java — arrays, linked lists, stacks, queues, trees, graphs, and recursion.</li>
+          <li>Analyzed and optimized solutions based on time and space complexity.</li>
+          <li>Implemented divide and conquer, greedy, and backtracking algorithmic techniques.</li>
+        </ul>
+        <div class="tags mt">
+          <span class="tag">Java</span>
+          <span class="tag">OOP</span>
+          <span class="tag">DSA</span>
+        </div>
+        <a href="https://github.com/1SanjanaKumari/Event-Remainder-App-using-Java" target="_blank" class="proj-link">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Achievements</h2>
+      <div class="achieve-grid">
+
+        
+
+        <div class="glass-card achieve-card reveal delay-1">
+          <div class="achieve-icon">⭐⭐</div>
+          <p>Secured <strong>2-Star Java</strong> badge on HackerRank, demonstrating strong foundational knowledge of Java concepts.</p>
+        </div>
+
+        <div class="glass-card achieve-card reveal delay-2">
+          <div class="achieve-icon">⭐⭐⭐</div>
+          <p>Achieved <strong>3-Star Python</strong> badge on HackerRank, reflecting proficiency in Python fundamentals.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Certifications</h2>
+      <div class="cert-grid">
+
+        <div class="glass-card cert-card reveal">
+          <div class="cert-num">01</div>
+          <div>
+            <h3>Privacy & Security in Online Social Media</h3>
+            <span class="card-tag inline">Oct 2025</span>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card reveal delay-1">
+          <div class="cert-num">02</div>
+          <div>
+            <h3>DSA with Java – CipherSchools</h3>
+            <span class="card-tag inline">July 2024</span>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card reveal delay-2">
+          <div class="cert-num">03</div>
+          <div>
+            <h3>DBMS – Scaler</h3>
+            <span class="card-tag inline">Mar 2024</span>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card reveal delay-3">
+          <div class="cert-num">04</div>
+          <div>
+            <h3>HTML – freeCodeCamp</h3>
+            <span class="card-tag inline">Oct 2023</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- RESUME -->
+  <section id="resume" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Resume</h2>
+      <div class="resume-wrapper reveal">
+        <div class="glass-card resume-card">
+          <div class="resume-toolbar">
+            <span class="resume-label">📄 Sanjana_Kumari_CV.pdf</span>
+            <a href="MYgenralCV.pdf" download="Sanjana_Kumari_CV.pdf" class="pill-btn">
+              ⬇ Download CV
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
-                    <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
-                    <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
+          </div>
+          <div class="resume-embed">
+            <iframe src="MYgenralCV.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" 
+                    title="Sanjana Kumari Resume">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Contact</h2>
+      <div class="contact-wrapper reveal">
+        <p class="contact-intro">I'm always open to opportunities, collaborations, or just a friendly chat. Let's connect!</p>
+        <div class="contact-links">
+          <a href="mailto:12sanjanak@gmail.com" class="contact-item glass-card">
+            <span class="c-icon">✉️</span>
+            <div>
+              <small>Email</small>
+              <p>12sanjanak@gmail.com</p>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" class="min-vh-100 d-flex align-items-center" style="background: linear-gradient(135deg, #0c1445 0%, #1a237e 100%); color: white;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center" data-aos="fade-right" data-aos-duration="1000">
-                    <img src="my_profile_pic.jpg" alt="Sanjana Kumari" class="img-fluid rounded-circle shadow-lg" style="width: 250px; height: 250px; object-fit: cover;">
-                </div>
-                <div class="col-md-8" data-aos="fade-left" data-aos-duration="1000">
-                    <h1 class="display-4 fw-bold mb-4">Sanjana Kumari</h1>
-                    <p class="lead mb-4">Motivated B.Tech Computer Science student at Lovely Professional University. Skilled in full-stack development, Data Structures & Algorithms, cloud technologies, and competitive programming. Passionate about building impactful web applications and solving complex problems.</p>
-                    <a href="contact.html" class="btn btn-outline-light btn-lg mb-3"><i class="fas fa-address-book me-2"></i>View Full Contact</a>
-                </div>
+          </a>
+          <a href="tel:+918899009065" class="contact-item glass-card">
+            <span class="c-icon">📱</span>
+            <div>
+              <small>Phone</small>
+              <p>+91-8899009065</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">Education</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-8" data-aos="fade-up">
-                    <div class="card shadow-lg border-0">
-                        <div class="card-body p-5">
-                            <i class="fas fa-graduation-cap fa-4x text-primary mb-4 mx-auto d-block"></i>
-                            <ul class="list-unstyled">
-                                <li class="mb-4 p-3 bg-white rounded shadow-sm">
-                                    <strong>Lovely Professional University, Punjab, India</strong><br>
-                                    <small class="text-muted">Bachelor of Technology - Computer Science and Engineering | CGPA: 7.27 | August 2023 - Present</small>
-                                </li>
-                                <li class="mb-4 p-3 bg-white rounded shadow-sm">
-                                    <strong>Kunwar Singh College, Darbhanga, Bihar</strong><br>
-                                    <small class="text-muted">Intermediate | Percentage: 69 | April 2022 - March 2023</small>
-                                </li>
-                                <li class="p-3 bg-white rounded shadow-sm">
-                                    <strong>Madonna English School, Darbhanga, Bihar</strong><br>
-                                    <small class="text-muted">Matriculation | Percentage: 83 | April 2020 - March 2021</small>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+          </a>
+          <a href="https://www.linkedin.com/in/12sanjanak" target="_blank" class="contact-item glass-card">
+            <span class="c-icon">🔗</span>
+            <div>
+              <small>LinkedIn</small>
+              <p>linkedin.com/in/12sanjanak</p>
             </div>
+          </a>
+          <a href="https://github.com/1SanjanaKumari" target="_blank" class="contact-item glass-card">
+            <span class="c-icon">💻</span>
+            <div>
+              <small>GitHub</small>
+              <p>github.com/1SanjanaKumari</p>
+            </div>
+          </a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 Sanjana Kumari. All rights reserved. | Made with ❤️ using HTML, CSS, JS & Bootstrap</p>
-        </div>
-    </footer>
+  <footer>
+    <p>Designed & Built by <strong>Sanjana Kumari</strong> · 2025</p>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom JS -->
-    <script src="script.js"></script>
-    <script>
-        AOS.init({ duration: 1200 });
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
