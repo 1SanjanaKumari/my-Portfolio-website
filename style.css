@@ -475,32 +475,88 @@ body::before {
 /* ===========================
    PROJECTS
 =========================== */
+/* ===========================
+   PROJECTS (updated)
+=========================== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.8rem;
 }
-.project-card { display: flex; flex-direction: column; }
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.project-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.07);
+}
+
+.project-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(2, 13, 31, 0.85) 100%
+  );
+  pointer-events: none;
+}
+
+.project-body {
+  padding: 1.5rem 1.8rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .project-date {
   font-size: 0.72rem;
   color: var(--blue-pale);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
+
 .project-card h3 {
   font-family: var(--font-head);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 0.25rem;
+  color: var(--text-main);
 }
+
 .project-type {
   color: var(--cyan);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 0.8rem;
 }
-.project-card p { color: var(--text-muted); font-size: 0.92rem; flex: 1; }
+
+.project-body p {
+  color: var(--text-muted);
+  font-size: 0.91rem;
+  flex: 1;
+}
+
 .proj-link {
   display: inline-block;
   margin-top: 1.2rem;
@@ -509,8 +565,9 @@ body::before {
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  transition: color var(--transition);
+  transition: color 0.3s;
 }
+
 .proj-link:hover { color: var(--cyan); }
 
 /* ===========================
@@ -563,30 +620,100 @@ body::before {
 /* ===========================
    CERTIFICATIONS
 =========================== */
+
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
+
 .cert-card {
   display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  padding: 1.5rem;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text-main);
+  cursor: pointer;
 }
+
+.cert-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: rgba(10, 31, 64, 0.8);
+}
+
+.cert-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(.4,0,.2,1), filter 0.4s ease;
+  filter: brightness(0.85);
+}
+
+.cert-card:hover .cert-img {
+  transform: scale(1.07);
+  filter: brightness(0.5);
+}
+
+.cert-img-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  background: rgba(10, 31, 64, 0.3);
+}
+
+.cert-card:hover .cert-img-overlay {
+  opacity: 1;
+}
+
+.cert-view-btn {
+  background: linear-gradient(135deg, var(--blue-bright), #0e4fba);
+  color: #fff;
+  padding: 9px 22px;
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 20px rgba(26,108,245,0.5);
+  transform: translateY(8px);
+  transition: transform 0.35s ease;
+}
+
+.cert-card:hover .cert-view-btn {
+  transform: translateY(0);
+}
+
+.cert-body {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.3rem 1.5rem;
+}
+
 .cert-num {
   font-family: var(--font-head);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
-  color: rgba(45,142,255,0.18);
+  color: rgba(45, 142, 255, 0.2);
   line-height: 1;
   flex-shrink: 0;
 }
-.cert-card h3 {
+
+.cert-info h3 {
   font-family: var(--font-head);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
+  color: var(--text-main);
+  line-height: 1.4;
 }
 /* ===========================
    RESUME
